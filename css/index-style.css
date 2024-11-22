@@ -1,0 +1,86 @@
+/* css */
+:root {
+    --navbar-color: #4a4947a2;
+    --text: #4A4947;
+    --white-text: #eeeade;
+    --background-color1: #B17457;
+    --background-color2: #D8D2C2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-style: oblique;
+}
+
+
+/* navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--background-color1);
+    text-decoration: none;
+    justify-content: flex-end;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    font-weight: 800;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: var(--white-text);
+   
+}
+
+#navbar li {
+transition: 0.3s ease-in-out;
+   
+}
+
+#navbar li:hover {
+    transform: scale(1.1);
+}
+
+
+/* google search */
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color1);
+}
+
+#search .textInput {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+#search .submitButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background-color2);
+    color: var(--text);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#search .submitButton:hover {
+    transform: scale(1.1);
+    margin: 0.5em;
+}
