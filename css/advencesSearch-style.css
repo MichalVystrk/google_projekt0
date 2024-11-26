@@ -50,25 +50,25 @@ transition: 0.3s ease-in-out;
     transform: scale(1.1);
 }
 
-
 /* google search */
 
 #search {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     background-color: var(--background-color1);
 }
 
 #search .textInput {
-    width: 40%;
+    width: 70%;
+    max-width: 800px;
     padding: 10px;
     border: none;
     border-radius: 5px;
     outline: none;
     font-size: 1.5rem;
-    margin-right: 10px;
 }
 
 #search .submitButton {
@@ -88,5 +88,6 @@ transition: 0.3s ease-in-out;
 }
 
 #search input {
+    margin-bottom: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Projekt0</title>
-    <link rel="stylesheet" href="./css/index-style.css">
+    <link rel="stylesheet" href="../css/advencesSearch-style.css">
     <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
@@ -15,12 +15,16 @@
 <body>
     <nav id="navbar">
     <ul>
-        <li><a href="./html/imageSearch.html">Image search</a></li>
-        <li><a href="./html/advencedSearch.html">Advenced search</a></li>
+        <li><a href="./imageSearch.html">Image search</a></li>
+        <li><a href="../index.html">Regular search</a></li>
     </ul>
     </nav>
     <form action="https://www.google.com/search" id="search">
-        <input type="text" name="q" class="textInput">
+        <input type="text" name="q" class="textInput" placeholder="Search...">
+        <input type="text" name="as_epq" class="textInput" placeholder="Exact phrase">
+        <input type="text" name="as_oq" class="textInput" placeholder="Any of these words">
+        <input type="text" name="as_eq" class="textInput" placeholder="None of these words">
+        <input type="text" name="as_sitesearch" class="textInput" placeholder="Site or domain">
         <input type="submit" value="Google Search" class="submitButton">
     </form>
 </body>
